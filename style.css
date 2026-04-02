@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background: #f5f7fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background: #fff;
+    padding: 30px 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.input-group {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+#habit-input {
+    flex: 1;
+    padding: 10px 15px;
+    border: 2px solid #ddd;
+    border-radius: 10px 0 0 10px;
+    font-size: 16px;
+    outline: none;
+    transition: border 0.3s;
+}
+
+#habit-input:focus {
+    border-color: #6c63ff;
+}
+
+#add-btn {
+    padding: 10px 20px;
+    border: none;
+    background: #6c63ff;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 0 10px 10px 0;
+    transition: background 0.3s;
+}
+
+#add-btn:hover {
+    background: #574fd6;
+}
+
+#habit-list {
+    list-style: none;
+}
+
+.habit-item {
+    background: #f0f0f0;
+    padding: 12px 15px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    transition: transform 0.2s;
+}
+
+.habit-item:hover {
+    transform: translateY(-3px);
+}
+
+.habit-item.completed {
+    text-decoration: line-through;
+    color: #999;
+}
+
+button.delete-btn {
+    background: #ff4b5c;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 8px;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button.delete-btn:hover {
+    background: #e04352;
+}
+
+.progress-container {
+    width: 100%;
+    height: 10px;
+    background: #ddd;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+#progress-bar {
+    width: 0%;
+    height: 100%;
+    background: #6c63ff;
+    border-radius: 10px;
+    transition: width 0.3s;
+}
